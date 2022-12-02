@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>INHATC_IA_GP_BAEDARI_360_PANORAMA_VIEWER</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0---access-yard">
+        <li class="text">진입 마당 [Access yard]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1---communication-square">
+        <li class="text">소통 광장 [Communication square]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2--1-water-space-1">
+        <li class="text">수공간-1 [Water space-1]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3--2-water-space-2">
+        <li class="text">수공간-2 [Water space-2]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4--3-water-space">
+        <li class="text">수공간-3 [Water space]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5----1-baedari-park-1">
+        <li class="text">배다리  공원-1 [Baedari park-1]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6---2-baedari-park-2">
+        <li class="text">배다리 공원-2 [Baedari park-2]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7---3-baedari-park-3">
+        <li class="text">배다리 공원-3 [Baedari park-3]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8---distillery-sunken">
+        <li class="text">양조장 썬큰 [Distillery sunken]]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9--1-the-upper-garden-1">
+        <li class="text">윗정원-1 [The upper garden-1]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10--2-the-upper-garden-2">
+        <li class="text">윗정원-2 [The upper garden-2]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11--bridge-garden">
+        <li class="text">다리정원 [Bridge garden]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12--1-the-lower-garden-1">
+        <li class="text">아랫정원-1 [The lower garden-1]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13--2-the-lower-garden-2">
+        <li class="text">아랫정원-2 [The lower garden-2]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14--tasting-space">
+        <li class="text">시음공간 [Tasting space]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-1--1st-floor-bridge">
+        <li class="text">1층 연결다리 [1st floor bridge]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16---1-gallery-cafe-1">
+        <li class="text">전시관 카페-1 [Gallery cafe-1]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17---2-gallery-cafe-2">
+        <li class="text">전시관 카페-2 [Gallery cafe-2]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18--1-gallery-1">
+        <li class="text">전시관-1 [Gallery-1]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19--2-gallery-2">
+        <li class="text">전시관-2 [Gallery-2]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-2---2st-floor-bridge">
+        <li class="text">2층 연결다리  [2st floor bridge]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21---local-brewery">
+        <li class="text">주민 양조장 [Local brewery]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22---baedari-library">
+        <li class="text">배다리 도서관 [Baedari library]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23--1-cafe-1">
+        <li class="text">카페-1 [Cafe-1]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24--2-cafe-2">
+        <li class="text">카페-2 [Cafe-2]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25--sarangbang">
+        <li class="text">사랑방 [Sarangbang]</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26----baedari-complex-cultural-center-top-view">
+        <li class="text">배다리 복합문화센터 전경 [Baedari complex cultural center top view]</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
